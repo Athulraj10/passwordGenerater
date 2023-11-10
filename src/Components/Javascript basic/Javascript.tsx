@@ -71,15 +71,15 @@ function getMyDetails(myDetails: GetMyDetailsFunctionTypes) {
 getMyDetails(u);
 
 // ----------------if we are returning a value should be like this
-let u: GetMyDetailsFunctionTypes = { name: 'athulraj' };
+let myName: GetMyDetailsFunctionTypes = { name: 'athulraj' };
 
 // -----------------Moving to function when types are working in a function
 interface GetMyDetailsFunctionTypes {
     name: string;
 }
 
-function getMyDetails(myDetails: GetMyDetailsFunctionTypes): string {
+function getMyName(myDetails: GetMyDetailsFunctionTypes): string {
     return myDetails.name;
 }
 
-getMyDetails(u);
+getMyDetails(myName);
