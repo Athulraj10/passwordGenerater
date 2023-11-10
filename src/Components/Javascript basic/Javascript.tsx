@@ -61,14 +61,11 @@ let skills : (string | number)[]=['TS',7]
 
 
 let u: GetMyDetailsFunctionTypes = { name: 'athulraj' };
-
 // -----------------Moving to function when types is working in a function
 interface GetMyDetailsFunctionTypes {
     name: string;
 }
-
 function getMyDetails(myDetails: GetMyDetailsFunctionTypes) {
     return myDetails.name;
 }
-
 getMyDetails(u);
