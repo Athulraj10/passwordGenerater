@@ -53,3 +53,7 @@ interface MyDetailsTypesUnion{
     getName?:() => void  //getName ? is used for is it not mandatory that the function is avalable is avabile then check the types else nothing will shows
 }
 
+
+// take an example if an array containing number and string so we have to use Union Operter
+let skills : (string | number)[]=['TS',7]
+// now this will make sense 
