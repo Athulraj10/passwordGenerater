@@ -51,6 +51,7 @@ interface MyDetailsTypesUnion{
     name:string;
     age:number | string; //here is will accept number and string
     getName?:() => void  //getName ? is used for is it not mandatory that the function is avalable is avabile then check the types else nothing will shows
+    // this is also knows as Optional types
 }
 
 
