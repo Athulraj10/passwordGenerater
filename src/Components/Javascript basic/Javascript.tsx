@@ -60,14 +60,15 @@ let skills : (string | number)[]=['TS',7]
 // now this will make sense 
 
 
-let u='athulraj'
+let u: GetMyDetailsFunctionTypes = { name: 'athulraj' };
 
 // -----------------Moving to function when types is working in a function
-interface GetMyDetailsFunctionTypes{
-    name:string;
-    salary?:number;
+interface GetMyDetailsFunctionTypes {
+    name: string;
 }
-function getMyDetails (myDetails:GetMyDetailsFunctionTypes){
-    return myDetails.name
+
+function getMyDetails(myDetails: GetMyDetailsFunctionTypes) {
+    return myDetails.name;
 }
-getMyDetails(u)
+
+getMyDetails(u);
