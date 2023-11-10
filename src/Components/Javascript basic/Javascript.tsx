@@ -24,3 +24,14 @@ let explicitMyDetails :{
     is_working:false
 }
 // -------------------This is the overAll explicit Types 
+
+// Now Moving to interFace concept in TypeScript
+interface MyDetailsTypes{
+    name:string;
+    age:number
+    getName?:() => void  //getName ? is used for is it not mandatory that the function is avalable is avabile then check the types else nothing will shows
+}
+let Mydetails :MyDetailsTypes={
+    name:'Athulraj',
+    age:24
+}
