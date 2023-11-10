@@ -55,6 +55,8 @@ interface MyDetailsTypesUnion{
 }
 
 
+
+
 // take an example if an array containing number and string so we have to use Union Operter
 let skills : (string | number)[]=['TS',7]
 // now this will make sense 
