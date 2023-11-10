@@ -58,3 +58,16 @@ interface MyDetailsTypesUnion{
 // take an example if an array containing number and string so we have to use Union Operter
 let skills : (string | number)[]=['TS',7]
 // now this will make sense 
+
+
+let u:string='athulraj'
+
+// -----------------Moving to function when types is working in a function
+interface GetMyDetailsFunctionTypes{
+    name:string;
+    salary?:number;
+}
+function getMyDetails (myDetails:GetMyDetailsFunctionTypes){
+    return myDetails.name
+}
+getMyDetails(u)
