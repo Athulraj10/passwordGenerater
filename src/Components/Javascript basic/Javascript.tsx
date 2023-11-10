@@ -79,5 +79,4 @@ interface GetMyDetailsFunctionTypes {
 function getMyName(myDetails: GetMyDetailsFunctionTypes): string {
     return myDetails.name;
 }
-
 getMyDetails(myName);
