@@ -60,7 +60,7 @@ let skills : (string | number)[]=['TS',7]
 // now this will make sense 
 
 
-let u:string='athulraj'
+let u='athulraj'
 
 // -----------------Moving to function when types is working in a function
 interface GetMyDetailsFunctionTypes{
