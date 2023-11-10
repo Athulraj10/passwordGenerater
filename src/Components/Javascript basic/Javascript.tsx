@@ -35,3 +35,10 @@ let Mydetails :MyDetailsTypes={
     name:'Athulraj',
     age:24
 }
+
+// ---------------------Now moving to Types
+type MyProfileDetails = {
+    name:string;
+    age:number
+}
+// also similar to interface but type declare using equal interface using curlyBracket
