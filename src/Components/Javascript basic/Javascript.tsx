@@ -42,3 +42,8 @@ type MyProfileDetails = {
     age:number
 }
 // also similar to interface but type declare using equal interface using curlyBracket
+
+
+
+// -------------------------Now moving to Union operator
+// for multiple types in a variable
