@@ -69,12 +69,12 @@ function getMyDetails(myDetails: GetMyDetailsFunctionTypes) {
 }
 getMyDetails(u);
 
-// ----------------if we are returning a value should be like this
+// ------ ----------if we are returning a value should be like this
 let myName: GetMyDetailsFunctionTypes = { name: 'athulraj' };
 // -----------------Moving to function when types are working in a function
 interface GetMyDetailsFunctionTypes {
     name: string;
-} 
+}  
 function getMyName(myDetails: GetMyDetailsFunctionTypes): string {
     return myDetails.name;
 }
