@@ -1,4 +1,4 @@
-// ------------------- Infertypes
+// ------------------- Infertypes 
 // inferTypes with means type will define automatically when initial 
 // declaretion was happened
 // TypeScript will automatically verify the types
