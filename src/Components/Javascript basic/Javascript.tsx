@@ -59,7 +59,6 @@ interface MyDetailsTypesUnion{
 let skills : (string | number)[]=['TS',7]
 // now this will make sense 
 
-
 let u: GetMyDetailsFunctionTypes = { name: 'athulraj' };
 // -----------------Moving to function when types is working in a function
 interface GetMyDetailsFunctionTypes {
