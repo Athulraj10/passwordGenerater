@@ -4,7 +4,6 @@
 // TypeScript will automatically verify the types
 let userName = 'athul raj'
 // userName=0 if we use this it will shows an error
-
 // ---------------Defining types or (Explicit Types)
 let explicitName : string = 'athulraj';
 let explicitNumber : number = 1000;
