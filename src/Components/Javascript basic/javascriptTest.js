@@ -41,22 +41,30 @@
   
   
 
-// Constructor function for a basic person object
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// // Constructor function for a basic person object
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
   
-  // Adding a method to the prototype of the Person constructor
-  Person.prototype.prototypeExample = function () {
-    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
-  };
+//   // Adding a method to the prototype of the Person constructor
+//   Person.prototype.prototypeExample = function () {
+//     console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+//   };
   
-  // Creating instances of the Person object
-  const person1 = new Person('Alice', 25);
-  const person2 = new Person('Bob', 30);
+//   // Creating instances of the Person object
+//   const person1 = new Person('Alice', 25);
+//   const person2 = new Person('Bob', 30);
   
-  // Calling the method from the prototype
-  person1.prototypeExample();
-  person2.prototypeExample();
-  
+//   // Calling the method from the prototype
+//   person1.prototypeExample();
+//   person2.prototypeExample();
+  // Create a Buffer with a string
+const buffer = Buffer.from('Hello, Node.js!', 'utf-8');
+
+// Convert the buffer to a string
+const bufferString = buffer.toString('utf-8');
+
+// Print the original buffer and the converted string
+console.log('Original Buffer:', buffer);
+console.log('Converted String:', bufferString);
