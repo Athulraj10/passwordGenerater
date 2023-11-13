@@ -30,14 +30,11 @@ const originalObject = {
       country: 'USA'
     }
   };
-  
   // Deep copy using JSON.parse() and JSON.stringify()
   const deepCopy = JSON.parse(JSON.stringify(originalObject));
-  
   // Modify the deep copy
   deepCopy.age = 31;
   deepCopy.address.city = 'San Francisco';
-  
   // Changes in the deep copy do not affect the original object
   console.log(originalObject);
   console.log(deepCopy);
