@@ -66,29 +66,54 @@
 // // Print the original buffer and the converted string
 // console.log('Original Buffer:', buffer);
 // console.log('Converted String:', bufferString);
-function selectionSort(arr) {
-    const n = arr.length;
+// function selectionSort(arr) {
+//     const n = arr.length;
   
-    for (let i = 0; i < n - 1; i++) {
-      let minIndex = i;
+//     for (let i = 0; i < n - 1; i++) {
+//       let minIndex = i;
   
-      for (let j = i + 1; j < n; j++) {
-        if (arr[j] < arr[minIndex]) {
-          minIndex = j;
-        }
-      }
+//       for (let j = i + 1; j < n; j++) {
+//         if (arr[j] < arr[minIndex]) {
+//           minIndex = j;
+//         }
+//       }
   
-      [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
-    }
-  }
+//       [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+//     }
+//   }
   
-  function findSecondLargest(arr) {
-    selectionSort(arr);
-    return arr[arr.length - 2];
-  }
+//   function findSecondLargest(arr) {
+//     selectionSort(arr);
+//     return arr[arr.length - 2];
+//   }
   
   // Example usage:
-  const numbers = [5, 2, 9, 1, 5, 6];
-  const secondLargest = findSecondLargest(numbers);
+//   const numbers = [5, 2, 9, 1, 5, 6];
+//   const secondLargest = findSecondLargest(numbers);
   
+  function binarySearch(arr, target, start = 0, end = arr.length - 1) {
+    // Base case: if the start index is greater than the end index, the target is not in the array
+    if (start > end) {
+      return -1;
+    }
+    const mid = Math.floor((start + end) / 2);
+    if (arr[mid] === target) {
+      return mid;
+    }
+    if (target < arr[mid]) {
+      return binarySearch(arr, target, start, mid - 1);
+    }
+    return binarySearch(arr, target, mid + 1, end);
+  }
+  
+  const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const targetValue = 7;
+  
+  const result = binarySearch(sortedArray, targetValue);
+  
+  if (result !== -1) {
+    console.log(`Target ${targetValue} found at index ${result}.`);
+  } else {
+    console.log(`Target ${targetValue} not found in the array.`);
+  }
   
