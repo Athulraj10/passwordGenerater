@@ -59,23 +59,25 @@ interface MyDetailsTypesUnion{
 let skills : (string | number)[]=['TS',7]
 // now this will make sense 
 
-let u: GetMyDetailsFunctionTypes = { name: 'athulraj' };
+// -----------------------------------------------------------------------
 // -----------------Moving to function when types is working in a function
-interface GetMyDetailsFunctionTypes {
-    name: string;
+// -----------------------------------------------------------------------
+type UserDetailsTypes={
+    name:String;
+    age:Number|String;
+    getUserNames?:()=>void;
 }
-function getMyDetails(myDetails: GetMyDetailsFunctionTypes) {
-    return myDetails.name;
+let userDetails:UserDetailsTypes={
+    name:'athulraj',
+    age:25
 }
-getMyDetails(u); 
+function getuserNames (userDetails:UserDetailsTypes){
+    return userDetails.name
+}
+console.log(getuserNames(userDetails))
+// -----------------------------------------------------------------------
+// -----------------function parameters typeing completed
+// -----------------------------------------------------------------------
 
-// ------ ----------if we are returning a value should be like this
-let myName: GetMyDetailsFunctionTypes = { name: 'athulraj' };
-// -----------------Moving to function when types are working in a function
-interface GetMyDetailsFunctionTypes {
-    name: string;
-}  
-function getMyName(myDetails: GetMyDetailsFunctionTypes): string {
-    return myDetails.name;
-}
-getMyDetails(myName);
+
+
