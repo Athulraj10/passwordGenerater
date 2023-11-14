@@ -79,5 +79,21 @@ console.log(getuserNames(userDetails))
 // -----------------function parameters typeing completed
 // -----------------------------------------------------------------------
 
+// -----------------------------------------------------------------------
+// -----------------function return type Defining Started
+// -----------------------------------------------------------------------
+
+function userAge({ name, age }: { name: string; age: number }):(string|number|object) {
+    return { name, age };
+}
+const details = {
+    name: 'John Doe',
+    age: 25
+};
+console.log(userAge(details));
+// -----------------------------------------------------------------------
+// -----------------function return type Defining Completed
+// -----------------------------------------------------------------------
+
 
 
