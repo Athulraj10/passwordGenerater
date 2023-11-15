@@ -5,6 +5,7 @@ const Navbar = () => {
     <div>
         navbar
         header
+        content
     </div>
   )
 }
