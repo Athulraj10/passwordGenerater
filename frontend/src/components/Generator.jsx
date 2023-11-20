@@ -127,19 +127,19 @@ const Generator = () => {
     },[action])
 
   return (
-    <div className='h-5/6 flex flex-col bg-secondaryColor justify-between'>
-        <div className='h-full flex justify-between'>
-            <div className='h-full w-1/2 flex justify-center items-center'>
-                <div className='bg-primaryColor w-3/6 p-5 rounded-lg'>
+    <div style={{background: 'rgba(0, 0, 0, 0.1)'}} className='h-5/6 flex flex-col  justify-between'>
+        <div className='h-full flex justify-between'  >
+            <div  className='h-full w-1/2 flex justify-center items-center'>
+                <div style={{background: 'rgba(0, 0, 0, 0.4)'}}  className=' w-3/6 p-5 rounded-lg'>
                     <div className='w-full h-8 flex'>
-                        <input type="text" value={result} className='h-full p-3 w-5/6 rounded-tl rounded-bl focus:outline-none' readOnly/>
-                        <div onClick={handleClipboard} className='bg-secondaryColor cursor-pointer flex justify-center items-center p-2 w-1/6 rounded-tr rounded-br'>
+                        <input type="text" style={{backgroundColor:"white"}} value={result} className='h-full p-3 w-5/6 rounded-tl rounded-bl focus:outline-none' readOnly/>
+                        <div style={{border:'1px solid white'}}  onClick={handleClipboard} className=' cursor-pointer flex justify-center items-center p-2 w-1/6 rounded-tr rounded-br'>
                             <BsClipboardFill className='text-xl text-primaryColor'/>
                         </div>
                     </div>
                     {
                         result ? (
-                            <button onClick={saveHandler} className='bg-secondaryColor hover:bg-quaternaryColor w-full mt-3 p-1 rounded-lg text-primaryColor font-medium'>Save Password</button>
+                            <button onClick={saveHandler} style={{border:'1px solid white'}} className=' hover: w-full mt-3 p-1 rounded-lg font-medium'>Save Password</button>
                         ):null
                     }
                     <form onSubmit={handleSubmit}>
@@ -164,12 +164,12 @@ const Generator = () => {
                             <input type="checkbox" checked={values.special} onChange={setValues} name="special" className='w-5 h-5' />
                         </div>
                         <div className='my-2 w-full'>
-                            <button type="submit" className='bg-secondaryColor hover:bg-quaternaryColor w-full p-2 rounded-lg text-primaryColor font-medium'>Generate Password</button>
+                            <button type="submit" style={{border:'1px solid white'}} className=' hover:bg-quaternaryColor w-full p-2 rounded-lg text-primaryColor font-medium'>Generate Password</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div className='h-5/6 w-1/2 bg-primaryColor mt-10 mx-5 rounded-lg'>
+            <div style={{border:'1px solid white'}} className='h-5/6 w-1/2  mt-10 mx-5 rounded-lg'>
                 <div className='px-3 flex items-center h-1/6'>
                     <h1 className='text-white font-bold text-xl tracking-widest'>Saved Passwords</h1>
                 </div>
@@ -177,7 +177,7 @@ const Generator = () => {
                     {
                         collection.length > 0 ? (
                             collection.map((password) => (
-                                <div key={password._id} className='bg-secondaryColor m-3 p-3 rounded flex justify-between'>
+                                <div key={password._id} style={{border:'1px solid white'}} className=' m-3 p-3 rounded flex justify-between'>
                                     {visible === password._id ? (
                                         <h1>{password.saved || ''}</h1>
                                     ) : (
