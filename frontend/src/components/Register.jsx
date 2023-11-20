@@ -48,9 +48,9 @@ const Register = () => {
 
   return (
     <div className='h-5/6 flex items-center justify-center'>
-        <div style={{background:"black"}} className='md:w-2/6 rounded-lg'>
-            <div style={{background:"black"}} className='text-center  p-2 rounded-tr-lg rounded-tl-lg'>
-                <h1 className='text-white font-bold text-2xl'>Register</h1>
+        <div style={{ background: 'rgba(0, 0, 0, 0.5)'}} className='md:w-2/6 rounded-lg'>
+            <div style={{ background: 'rgba(0, 0, 0, 0.3)'}} className='text-center  p-2 rounded-tr-lg rounded-tl-lg'>
+                <h1  className='text-white font-bold text-2xl'>Register</h1>
             </div>
             <form className='p-5' onSubmit={submitHandler}>
                 <div className='my-2'>
