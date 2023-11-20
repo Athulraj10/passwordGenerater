@@ -39,11 +39,16 @@ const Login = () => {
       navigate('/home')
     }
   },[userInfo,navigate])
-
+  const divStyle = {
+    height: '80%',
+    display: 'flex',
+    justifyContent: 'center',
+    background: 'url("background.jpeg") center/cover',  // Add your image path here
+  };
   return (
-    <div className='h-5/6 flex justify-center'>
-        <div className='md:w-2/6 h-fit bg-yellow-500 rounded-lg mt-20'>
-            <div className='text-center bg-primaryColor p-2 rounded-tr-lg rounded-tl-lg'>
+    <div style={divStyle}>
+        <div style={{background:'black'}} className='md:w-2/6 h-fit rounded-lg mt-20'>
+            <div style={{background:"black"}} className='text-center p-2 rounded-tr-lg rounded-tl-lg'>
                 <h1 className='text-white font-bold text-2xl'>Login</h1>
             </div>
             <form className='p-5' onSubmit={submitHandler}>

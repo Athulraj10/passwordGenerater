@@ -48,8 +48,8 @@ const Register = () => {
 
   return (
     <div className='h-5/6 flex items-center justify-center'>
-        <div className='md:w-2/6 bg-yellow-500 rounded-lg'>
-            <div className='text-center bg-primaryColor p-2 rounded-tr-lg rounded-tl-lg'>
+        <div style={{background:"black"}} className='md:w-2/6 rounded-lg'>
+            <div style={{background:"black"}} className='text-center  p-2 rounded-tr-lg rounded-tl-lg'>
                 <h1 className='text-white font-bold text-2xl'>Register</h1>
             </div>
             <form className='p-5' onSubmit={submitHandler}>

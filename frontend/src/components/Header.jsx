@@ -28,7 +28,7 @@ const Header = () => {
   }
 
   return (
-    <div className='flex justify-between bg-primaryColor p-3'>
+    <div className='flex justify-between p-3' style={{background:"black"}}>
         <h1 className='w-1/3 text-white font-bold md:text-xl'>Password Generator</h1>
         {
           (userInfo) ? (
