@@ -27,6 +27,7 @@ var moveZeroes = function (nums) {
   return nums;
 };
 
+
 // Example usage:
 // const result = moveZeroes([0, 1, 0, 3, 12]);
 // console.log(result); // Output: [1, 3, 12, 0, 0]
