@@ -5,6 +5,7 @@ import { useLogoutMutation } from '../slices/usersApiSlice'
 import { logout } from '../slices/authSlice'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import backgroundImageImported from './navbar.jpg'
 
 const Header = () => {
 
@@ -27,8 +28,15 @@ const Header = () => {
     }
   }
 
+  const backgroundStyle = {
+    background: "transparent",
+    border:'1px solid silver',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
+
   return (
-    <div className='flex justify-between p-3' style={{background:"black"}}>
+    <div className='flex justify-between p-3' style={backgroundStyle}>
         <h1 className='w-1/3 text-white font-bold md:text-xl'>Password Generator</h1>
         {
           (userInfo) ? (
