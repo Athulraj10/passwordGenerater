@@ -1,0 +1,19 @@
+.container{
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.one,.two,.three{
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    border:1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
