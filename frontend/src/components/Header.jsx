@@ -37,13 +37,13 @@ const Header = () => {
 
   return (
     <div className='flex justify-between p-3' style={backgroundStyle}>
-        <h1 className='w-1/3 text-white font-bold md:text-xl'>Password Generator</h1>
+        <h1 className='w-1/3 text-white font-bold md:text-xl'>Generate Your Password</h1>
         {
           (userInfo) ? (
             <>
-              <h1 className='w-1/3 text-white font-medium text-lg text-center'>Hi, {userInfo.name}</h1>
               <div className='w-1/3 flex justify-end'>
-                <RiLogoutCircleRLine className='text-3xl text-white cursor-pointer' onClick={logoutHandler}/>
+              <h1 className='w-1/3 text-white font-medium text-lg text-center'>Hi, {userInfo.name}</h1>
+                <button className='btn text-white cursor-pointer' onClick={logoutHandler}>logout</button>
               </div>
             </>
           ):null
